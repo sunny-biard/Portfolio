@@ -1,7 +1,21 @@
+import React, { useState, useEffect } from "react";
+
 function Navbar() {
+    
+    const [scroll, setScroll] = useState('');
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                setScroll('navbarDark');
+            } else {
+                setScroll('');
+            }
+        });
+    }, [])
 
     return (
-        <nav className="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <nav className={`navbar-dark navbar navbar-expand-lg fixed-top navbarScroll ${scroll}`}>
             <div className="container">
                 <a className="navbar-brand" href="#">Name</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"

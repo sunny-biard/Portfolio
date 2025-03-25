@@ -1,6 +1,4 @@
 import './App.css'
-import './styles/style.css'
-import './assets/scripts/script'
 import About from './components/About';
 import Banner from './components/Banner';
 import Contact from './components/Contact';
