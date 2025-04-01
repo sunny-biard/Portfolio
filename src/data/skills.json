@@ -30,3 +30,9 @@
         "title ": "Tests exploratoires, unitaires et d’intégration, définition d’une stratégie de test et d’un rédaction d’un cahier de recette, automatisation de tests E2E et d’API"
     }
 ]
+
+// src/images.js
+//const importAll = (r) => r.keys().map(r);
+//const images = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+ 
+//export default images;
