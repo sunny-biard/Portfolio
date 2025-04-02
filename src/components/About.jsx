@@ -1,3 +1,5 @@
+import profilePicture from "../data/images/person.png"
+
 function About() {
 
     return (
@@ -5,6 +7,9 @@ function About() {
             <div className="container mt-4 pt-4">
                 <h2 className="text-center">A propos</h2>
                 <div className="row mt-4">
+                    <div class="col-lg-4">
+                        <img src={profilePicture} class="imageAboutPage" alt="Photo de profil"></img>
+                    </div>
 
                     <div className="col-lg-8">
                         <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown

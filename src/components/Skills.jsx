@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import React, { useState, useEffect} from "react";
-import data from "../data/skills.json"
 
 const SectionWrapper = styled.section`
     display: flex;
@@ -52,11 +51,30 @@ const SkillElement = styled.div`
 `
 function Skills() {
 
+    const [properties, setProperties] = useState([]);
+    
+    useEffect(() => {
+         fetch('src/data/skills.json',
+               {
+                headers : { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    setProperties(data);
+                })
+                .catch((error) => {
+                    console.error(error)
+                });
+    }, []);
+
     return (
         <SectionWrapper id="skills">
             <h2>Mes compétences</h2>
             <SkillsWrapper>
-                {data.map(item => (
+                {properties.map(item => (
                     <SkillElement key={item.title}>
                         <img src={item.image} alt={item.text}></img>
                         <p>{item.title}</p>

@@ -1,6 +1,5 @@
 import styled from "styled-components"
-import React, { useState, useEffect} from "react"
-import data from "../data/portfolio.json"
+import React, { useState, useEffect} from "react";
 
 const SectionWrapper = styled.section`
     display: flex;
@@ -50,13 +49,33 @@ const ProjectElement = styled.div`
         width: 100%;
       }
 `
+
 function Projects() {
+
+    const [properties, setProperties] = useState([]);
+
+    useEffect(() => {
+        fetch('src/data/portfolio.json',
+            {
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+            })
+            .then(response => response.json())
+            .then(data => {
+                setProperties(data);
+            })
+            .catch((error) => {
+                console.error(error)
+            });
+    }, []);
 
     return (
         <SectionWrapper id="portfolio">
             <h2>Mes projets</h2>
             <ProjectsWrapper>
-                {data.map(item => (
+                {properties.map(item => (
                     <ProjectElement key={item.title}>
                         <img src={item.image} alt={item.text}></img>
                         <p>{item.title}</p>
