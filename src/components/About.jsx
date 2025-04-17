@@ -10,40 +10,18 @@ function About() {
                     <div className="col-lg-4">
                         <img src={profilePicture} className="imageAboutPage" alt="Photo de profil"></img>
                     </div>
-
                     <div className="col-lg-8">
-                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                            only five centuries, but also the leap into electronic typesetting, remaining essentially
-                            unchanged
-
-                        </p>
                         <div className="row mt-3">
-                            <div className="col-md-6">
-                                <ul>
-                                    <li>Nom: Prénom nom</li>
-                                    <li>Age: 42</li>
-                                    <li>xxx: xxx xxx</li>
-
-                                </ul>
-                            </div>
-                            <div className="col-md-6">
-                                <ul>
-                                    <li>Nom: Prénom nom</li>
-                                    <li>Age: 42</li>
-                                    <li>xxx: xxx xxx</li>
-                                </ul>
-                            </div>
+                            <p> Actuellement en reconversion professionnelle, je termine actuellement ma formation de BTS Testeur Logiciel en alternance dispensée par OpenClassrooms.
+                            Cette formation m'a permis d'acquérir de solides compétences aussi bien en test qu'en développement mais aussi en gestion de projet, compétences que j'ai pu mettre en pratique au sein de mon entreprise.
+                            Par ailleurs, cette dernière m'a permis de me spécialiser dans un aspect du métier qui me passionne : l'automatisation des tests. En effet, dans le cadre d'un projet conséquent, on m'a confié pour mission de développer, déployer et maintenir l'ensemble des tests automatisés d'un projet sous Selenium (Java), projet s'étalant sur 2 ans (toujours en cours).
+                            </p>
                         </div>
-                        <div className="row mt-3">
-                            <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                                survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                essentially unchanged.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                                survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                essentially unchanged.
+                        <div>
+                            <p> Formation :
+                                <li>BTS Testeur Logiciel (2024 - Aujourd'hui)</li>
+                                <li>Double Licence Économie-Gestion (2020 - 2023)</li>
+                                <li>Licence Informatique (2017 - 2020)</li>
                             </p>
                         </div>
                     </div>

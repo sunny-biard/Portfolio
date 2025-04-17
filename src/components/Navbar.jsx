@@ -35,10 +35,10 @@ function Navbar() {
                             <a className="nav-link" href="#skills">Compétences</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#portfolio">Portfolio</a>
+                            <a className="nav-link" href="#projects">Projets</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact">Contactez-moi</a>
+                            <a className="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
 

@@ -22,7 +22,7 @@ const SkillsWrapper = styled.div`
       }
 `
 
-const SkillElement = styled.div`
+const SkillCard = styled.div`
     position: relative;
     width: 200px;
     height: 200px;
@@ -32,29 +32,19 @@ const SkillElement = styled.div`
         height: 100%;
         border-radius: 10px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
-        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
-    }
-    p {
-        color: black;
-        font-size: 24px;
-        font-weight: 600;
-        position: absolute;
-        left: 20px;
-        bottom: 0;
-        width: 80%;
-        text-shadow: 0 3px 10px black;
     }
 
     @media (max-width: 768px) {
         width: 100%;
       }
 `
+
 function Skills() {
 
-    const [properties, setProperties] = useState([]);
+    const [devSkills, setdevSkills] = useState([]);
     
     useEffect(() => {
-         fetch('src/data/skills.json',
+         fetch('src/data/devSkills.json',
                {
                 headers : { 
                     'Content-Type': 'application/json',
@@ -63,22 +53,69 @@ function Skills() {
                 })
                 .then(response => response.json())
                 .then(data => {
-                    setProperties(data);
+                    setdevSkills(data);
                 })
                 .catch((error) => {
                     console.error(error)
                 });
     }, []);
 
+    const [testSkills, setTestSkills] = useState([]);
+
+    useEffect(() => {
+        fetch('src/data/testSkills.json',
+              {
+               headers : { 
+                   'Content-Type': 'application/json',
+                   'Accept': 'application/json'
+               }
+               })
+               .then(response => response.json())
+               .then(data => {
+                   setTestSkills(data);
+               })
+               .catch((error) => {
+                   console.error(error)
+               });
+   }, []);
+
+   const [otherSkills, setOtherSkills] = useState([]);
+    
+   useEffect(() => {
+        fetch('src/data/otherSkills.json',
+              {
+               headers : { 
+                   'Content-Type': 'application/json',
+                   'Accept': 'application/json'
+               }
+               })
+               .then(response => response.json())
+               .then(data => {
+                   setOtherSkills(data);
+               })
+               .catch((error) => {
+                   console.error(error)
+               });
+   }, []);
+
     return (
         <SectionWrapper id="skills">
             <h2>Mes compétences</h2>
             <SkillsWrapper>
-                {properties.map(item => (
-                    <SkillElement key={item.title}>
-                        <img src={item.image} alt={item.text}></img>
-                        <p>{item.title}</p>
-                    </SkillElement>
+                {devSkills.map(item => (
+                    <SkillCard key={item.title}>
+                        <img src={item.image} alt={item.title}></img>
+                    </SkillCard>
+                ))}
+                {testSkills.map(item => (
+                    <SkillCard key={item.title}>
+                        <img src={item.image} alt={item.title}></img>
+                    </SkillCard>
+                ))}
+                {otherSkills.map(item => (
+                    <SkillCard key={item.title}>
+                        <img src={item.image} alt={item.title}></img>
+                    </SkillCard>
                 ))}
             </SkillsWrapper>
         </SectionWrapper>

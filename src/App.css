@@ -100,6 +100,11 @@
 }
 
 /* contact */
+.contactContent {
+    display: flex;
+    justify-content: space-around;
+}
+
 .contactColumn {
     display: flex;
     flex-direction: column;

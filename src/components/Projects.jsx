@@ -13,18 +13,25 @@ const ProjectsWrapper = styled.div`
     justify-content: space-between;
     gap: 50px;
     border-radius: 25px;
-    background-color: #F6F6F6;
     padding: 60px;
 
     @media (max-width: 768px) {
-        background-color: white;
         padding: 0;
       }
 `
 
-const ProjectElement = styled.div`
-    position: relative;
+const Project = styled.div`
     width: 200px;
+    height: 200px;
+        
+    @media (max-width: 768px) {
+        width: 100%;
+      }
+`
+
+const ProjectCard = styled.div`
+    position: relative;
+    width: 250px;
     height: 200px;
     border-radius: 25px;
     img {
@@ -32,19 +39,8 @@ const ProjectElement = styled.div`
         height: 100%;
         border-radius: 10px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
-        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
     }
-    p {
-        color: black;
-        font-size: 24px;
-        font-weight: 600;
-        position: absolute;
-        left: 20px;
-        bottom: 0;
-        width: 80%;
-        text-shadow: 0 3px 10px black;
-    }
-
+        
     @media (max-width: 768px) {
         width: 100%;
       }
@@ -72,14 +68,18 @@ function Projects() {
     }, []);
 
     return (
-        <SectionWrapper id="portfolio">
+        <SectionWrapper id="projects">
             <h2>Mes projets</h2>
             <ProjectsWrapper>
                 {properties.map(item => (
-                    <ProjectElement key={item.title}>
-                        <img src={item.image} alt={item.text}></img>
+                    <Project key={item.title}>
+                        <ProjectCard>
+                            <img src={item.image} alt={item.text}></img>
+                        </ProjectCard>
                         <p>{item.title}</p>
-                    </ProjectElement>
+                        <p>{item.text}</p>
+                        <a href={item.link}>Lien vers le projet</a>
+                    </Project>
                 ))}
             </ProjectsWrapper>
         </SectionWrapper>
