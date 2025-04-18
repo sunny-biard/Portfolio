@@ -4,6 +4,9 @@ on:
     branches: ["react"]
 jobs:
   deploy: 
+    permissions:
+      id-token: write
+      pages: write
     runs-on: ubuntu-latest
     environment:
       name: github-pages
