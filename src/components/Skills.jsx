@@ -42,77 +42,39 @@ const SkillCard = styled.div`
 function Skills() {
 
     const [devSkills, setdevSkills] = useState([]);
-    
-    useEffect(() => {
-         fetch('src/data/devSkills.json',
-               {
-                headers : { 
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    setdevSkills(data);
-                })
-                .catch((error) => {
-                    console.error(error)
-                });
-    }, []);
-
     const [testSkills, setTestSkills] = useState([]);
-
-    useEffect(() => {
-        fetch('src/data/testSkills.json',
-              {
-               headers : { 
-                   'Content-Type': 'application/json',
-                   'Accept': 'application/json'
-               }
-               })
-               .then(response => response.json())
-               .then(data => {
-                   setTestSkills(data);
-               })
-               .catch((error) => {
-                   console.error(error)
-               });
-   }, []);
-
-   const [otherSkills, setOtherSkills] = useState([]);
+    const [otherSkills, setOtherSkills] = useState([]);
     
-   useEffect(() => {
-        fetch('src/data/otherSkills.json',
-              {
-               headers : { 
-                   'Content-Type': 'application/json',
-                   'Accept': 'application/json'
-               }
-               })
-               .then(response => response.json())
-               .then(data => {
-                   setOtherSkills(data);
-               })
-               .catch((error) => {
-                   console.error(error)
-               });
-   }, []);
+    const skills = [...devSkills, ...testSkills, ...otherSkills];
+
+    const getSkills = async (url, callback) => {
+        fetch(url,
+            {
+             headers : { 
+                 'Content-Type': 'application/json',
+                 'Accept': 'application/json'
+             }
+             })
+             .then(response => response.json())
+             .then(data => {
+                 callback(data);
+             })
+             .catch((error) => {
+                 console.error(error)
+             });
+    }
+    
+    useEffect(() => {
+         getSkills('src/data/devSkills.json', setdevSkills)
+         getSkills('src/data/testSkills.json', setTestSkills)
+         getSkills('src/data/otherSkills.json', setOtherSkills)
+    }, []);
 
     return (
         <SectionWrapper id="skills">
             <h2>Mes compétences</h2>
             <SkillsWrapper>
-                {devSkills.map(item => (
-                    <SkillCard key={item.title}>
-                        <img src={item.image} alt={item.title}></img>
-                    </SkillCard>
-                ))}
-                {testSkills.map(item => (
-                    <SkillCard key={item.title}>
-                        <img src={item.image} alt={item.title}></img>
-                    </SkillCard>
-                ))}
-                {otherSkills.map(item => (
+                {skills.map(item => (
                     <SkillCard key={item.title}>
                         <img src={item.image} alt={item.title}></img>
                     </SkillCard>
