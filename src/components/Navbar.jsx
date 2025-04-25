@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function Navbar() {
     
-    const [scroll, setScroll] = useState('');
+    const [scroll, setScroll] = useState([]);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {

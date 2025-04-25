@@ -15,15 +15,9 @@ const SkillsWrapper = styled.div`
     border-radius: 25px;
     background-color: #F6F6F6;
     padding: 60px;
-
-    @media (max-width: 768px) {
-        background-color: white;
-        padding: 0;
-      }
 `
 
 const SkillCard = styled.div`
-    position: relative;
     width: 200px;
     height: 200px;
     border-radius: 25px;
@@ -33,10 +27,6 @@ const SkillCard = styled.div`
         border-radius: 10px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
     }
-
-    @media (max-width: 768px) {
-        width: 100%;
-      }
 `
 
 function Skills() {

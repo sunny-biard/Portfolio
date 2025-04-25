@@ -6,21 +6,10 @@
   text-align: center;
 }
 
-#about,
-#skills,
-#portfolio,
-#contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
-}
-#about h2,
-#skills h2,
-#portfolio h2,
-#contact h2 {
-    margin-bottom: 3rem;
-}
-#contact {
-    padding-bottom: 4rem;
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
 /* display background dark color on navbar scroll */

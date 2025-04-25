@@ -9,41 +9,21 @@ const SectionWrapper = styled.section`
 
 const ProjectsWrapper = styled.div`
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: space-between;
-    gap: 50px;
-    border-radius: 25px;
-    padding: 60px;
-
-    @media (max-width: 768px) {
-        padding: 0;
-      }
+    background-color: #F6F6F6;
+    gap: 20px;
 `
 
 const Project = styled.div`
-    width: 200px;
-    height: 200px;
-        
-    @media (max-width: 768px) {
-        width: 100%;
-      }
-`
-
-const ProjectCard = styled.div`
-    position: relative;
-    width: 250px;
-    height: 200px;
     border-radius: 25px;
     img {
-        width: 100%;
-        height: 100%;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
         border-radius: 10px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
     }
-        
-    @media (max-width: 768px) {
-        width: 100%;
-      }
 `
 
 function Projects() {
@@ -73,10 +53,8 @@ function Projects() {
             <ProjectsWrapper>
                 {properties.map(item => (
                     <Project key={item.title}>
-                        <ProjectCard>
-                            <img src={item.image} alt={item.text}></img>
-                        </ProjectCard>
-                        <p>{item.title}</p>
+                        <img src={item.image} alt={item.text}></img>
+                        <h4>{item.title}</h4>
                         <p>{item.text}</p>
                         <a href={item.link}>Lien vers le projet</a>
                     </Project>
