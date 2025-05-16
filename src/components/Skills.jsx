@@ -18,14 +18,13 @@ const SkillsWrapper = styled.div`
 `
 
 const SkillCard = styled.div`
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 25px;
     img {
         width: 100%;
         height: 100%;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+        object-fit: scale-down;
     }
 `
 

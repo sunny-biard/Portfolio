@@ -16,13 +16,10 @@ const ProjectsWrapper = styled.div`
 `
 
 const Project = styled.div`
-    border-radius: 25px;
     img {
         width: 200px;
         height: 200px;
-        margin: 10px;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+        object-fit: scale-down;
     }
 `
 

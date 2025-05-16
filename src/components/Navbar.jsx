@@ -17,7 +17,7 @@ function Navbar() {
     return (
         <nav className={`navbar-dark navbar navbar-expand-lg fixed-top navbarScroll ${scroll}`}>
             <div className="container">
-                <a className="navbar-brand" href="#">Name</a>
+                <a className="navbar-brand" href="#">Sunny BIARD</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
