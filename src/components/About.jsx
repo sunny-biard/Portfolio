@@ -1,4 +1,3 @@
-import profilePicture from "../data/images/person.png"
 
 function About() {
 

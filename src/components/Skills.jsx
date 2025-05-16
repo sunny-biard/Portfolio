@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import React, { useState, useEffect} from "react";
+import { prefix } from "../config";
 
 const SectionWrapper = styled.section`
     display: flex;
@@ -54,9 +55,9 @@ function Skills() {
     }
     
     useEffect(() => {
-         getSkills('src/data/devSkills.json', setdevSkills)
-         getSkills('src/data/testSkills.json', setTestSkills)
-         getSkills('src/data/otherSkills.json', setOtherSkills)
+         getSkills(`${prefix}/data/devSkills.json`, setdevSkills)
+         getSkills(`${prefix}/data/testSkills.json`, setTestSkills)
+         getSkills(`${prefix}/data/otherSkills.json`, setOtherSkills)
     }, []);
 
     return (
@@ -65,7 +66,7 @@ function Skills() {
             <SkillsWrapper>
                 {skills.map(item => (
                     <SkillCard key={item.title}>
-                        <img src={item.image} alt={item.title}></img>
+                        <img src={prefix + item.image} alt={item.title}></img>
                     </SkillCard>
                 ))}
             </SkillsWrapper>
