@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import React, { useState, useEffect} from "react";
+import { prefix } from "../config";
 
 const SectionWrapper = styled.section`
     display: flex;
