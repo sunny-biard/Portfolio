@@ -28,7 +28,7 @@ function Projects() {
     const [properties, setProperties] = useState([]);
 
     useEffect(() => {
-        fetch('src/data/portfolio.json',
+        fetch(`${prefix}/data/portfolio.json`,
             {
             headers : { 
                 'Content-Type': 'application/json',

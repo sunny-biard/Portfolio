@@ -1,14 +1,14 @@
 [
     {
-        "image": "src/data/images/cypress.png",
+        "image": "/data/images/cypress.png",
         "title": "Cypress"
     },
     {
-        "image": "src/data/images/selenium.png",
+        "image": "/data/images/selenium.png",
         "title": "Selenium"
     },
     {
-        "image": "src/data/images/squashtm.png",
+        "image": "/data/images/squashtm.png",
         "title": "SquashTM"
     }
 ]
