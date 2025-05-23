@@ -1,18 +1,18 @@
 [
     {
-        "image": "/data/images/jenkins.png",
+        "image": "/data/images/jenkins.webp",
         "title": "Jenkins"
     },
     {
-        "image": "/data/images/git.png",
+        "image": "/data/images/git.webp",
         "title": "Git"
     },
     {
-        "image": "/data/images/jira.png",
+        "image": "/data/images/jira.webp",
         "title": "Jira"
     },
     {
-        "image": "/data/images/figma.png",
+        "image": "/data/images/figma.webp",
         "title": "Figma"
     }
 ]
