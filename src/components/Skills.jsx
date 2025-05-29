@@ -16,6 +16,10 @@ const SkillsWrapper = styled.div`
     border-radius: 25px;
     background-color: #F6F6F6;
     padding: 60px;
+      
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 `
 
 const SkillCard = styled.div`
