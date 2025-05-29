@@ -12,6 +12,10 @@ section {
     padding: 50px;
 }
 
+.nav-link {
+    color: white;
+}
+
 /* display background dark color on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: #5a8dee;
