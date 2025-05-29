@@ -14,7 +14,7 @@ function About() {
                             </p>
                         </div>
                         <div>
-                            <h4>Formation :</h4>
+                            <h3>Formation :</h3>
                             <p>BTS Testeur Logiciel (2024 - Aujourd'hui)</p>
                             <p>Double Licence Économie-Gestion (2020 - 2023)</p>
                             <p>Licence Informatique (2017 - 2020)</p>

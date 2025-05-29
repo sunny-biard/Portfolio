@@ -21,6 +21,9 @@ const ProjectsWrapper = styled.div`
 `
 
 const Project = styled.div`
+    a {
+        color: #000000;
+    }
     img {
         width: 200px;
         height: 200px;
@@ -56,7 +59,7 @@ function Projects() {
                 {properties.map(item => (
                     <Project key={item.title}>
                         <img src={prefix + item.image} alt={item.text}></img>
-                        <h4>{item.title}</h4>
+                        <h3>{item.title}</h3>
                         <p>{item.text}</p>
                         <a href={item.link}>Lien vers le projet</a>
                     </Project>
