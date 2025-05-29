@@ -17,7 +17,7 @@ function Navbar() {
     return (
             <nav className={`navbar-dark navbar navbar-expand-lg fixed-top navbarScroll ${scroll}`}>
                 <div className="container">
-                    <a className="navbar-brand" href="#" style="color:white;">Sunny BIARD</a>
+                    <a className="navbar-brand" href="#">Sunny BIARD</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -26,19 +26,19 @@ function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#home" style="color:white;">Accueil</a>
+                                <a className="nav-link" href="#home">Accueil</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#about" style="color:white;">A propos</a>
+                                <a className="nav-link" href="#about">A propos</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#skills" style="color:white;">Compétences</a>
+                                <a className="nav-link" href="#skills">Compétences</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#projects" style="color:white;">Projets</a>
+                                <a className="nav-link" href="#projects">Projets</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#contact" style="color:white;">Contact</a>
+                                <a className="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
 
