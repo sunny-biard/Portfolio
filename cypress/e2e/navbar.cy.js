@@ -1,6 +1,6 @@
 describe('Navbar', () => {
   it('Should display the navbar and allow user to access directly to different sections', () => {
-    cy.visit('https://sunny-biard.github.io//Portfolio/')
+    cy.visit('https://sunny-biard.github.io/Portfolio/')
 
     cy.get('a[href="#home"]').click();
 
