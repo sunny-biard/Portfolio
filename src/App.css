@@ -14,17 +14,21 @@ section {
 
 /* display background dark color on navbar scroll */
 .navbarScroll.navbarDark {
-    background-color: #5a8dee;
+    background-color: #000;
     color: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.16);
     transition: 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
 
 /* hero background image */
 .bgimage {
     height: 100vh;
     max-height: 900px;
-    background: url("/Portfolio/data/images/image1.webp");
+    background: url("/Portfolio/data/images/background.webp");
     background-size: cover;
     position: relative;
     margin: 0;
