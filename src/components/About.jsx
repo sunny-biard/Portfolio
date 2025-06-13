@@ -2,11 +2,11 @@
 function About() {
 
     return (
-        <section id="about">
+        <section id="about" className="container">
             <div>
                 <h2>A propos</h2>
                 <div>
-                    <div>
+                    <div className="containerAbout flex">
                         <div>
                             <p> Actuellement en reconversion professionnelle, je termine actuellement ma formation de BTS Testeur Logiciel en alternance dispensée par OpenClassrooms.
                             Cette formation m'a permis d'acquérir de solides compétences aussi bien en test qu'en développement mais aussi en gestion de projet, compétences que j'ai pu mettre en pratique au sein de mon entreprise.

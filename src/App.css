@@ -12,6 +12,10 @@ section {
     padding: 50px;
 }
 
+.flex {
+    display: flex;
+}
+
 /* display background dark color on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: #000;
@@ -51,6 +55,16 @@ section {
 }
 
 /* about */
+.container {
+    max-width: 1370px;
+    padding: 1rem;
+}
+
+.containerAbout {
+    flex-direction: column;
+}
+
+
 .imageAboutPage {
     width: 100%;
 }
