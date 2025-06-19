@@ -22,6 +22,10 @@ p, a {
     font-family: Andale Mono, monospace;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .container {
     max-width: 1370px;
     padding: 2rem;
