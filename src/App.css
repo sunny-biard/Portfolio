@@ -13,14 +13,13 @@ section {
     padding: 2rem;
 }
 
-h2 {
+h1, h2 {
     font-family: DejaVu Sans Mono, monospace;
     font-size: 2rem;
 }
 
-p {
-    font-family: DejaVu Sans Mono, monospace;
-    font-style: italic;
+p, a {
+    font-family: Andale Mono, monospace;
 }
 
 .container {
