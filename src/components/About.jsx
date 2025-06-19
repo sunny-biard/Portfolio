@@ -15,6 +15,9 @@ const AboutWrapper = styled.div`
 const AboutElement = styled.div`
     width: 50%;
     padding: 1rem;
+    h3 {
+        font-size: 1rem;
+    }
     li {
         padding: 1rem 0;
     }

@@ -17,6 +17,7 @@ h1, h2, h3 {
     font-family: DejaVu Sans Mono, monospace;
     font-style: italic;
     font-size: 2rem;
+    padding: 2rem 0;
 }
 
 p, a {
