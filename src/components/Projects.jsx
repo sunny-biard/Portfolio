@@ -13,8 +13,6 @@ const ProjectsWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    border-radius: 25px;
-    background-color: #F6F6F6;
 
     @media (max-width: 768px) {
         justify-content: center;
@@ -24,9 +22,10 @@ const ProjectsWrapper = styled.div`
 
 const Project = styled.div`
     width: calc(100% * (1/4));
-    a {
-        color: #292626;
-    }
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    color: #f1ce8c;
     img {
         width: 200px;
         height: 200px;
