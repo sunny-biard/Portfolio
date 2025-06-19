@@ -10,12 +10,13 @@ const SectionWrapper = styled.section`
 
 const ProjectsWrapper = styled.div`
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
 
     @media (max-width: 768px) {
         justify-content: center;
+        flex-wrap: wrap;
     }
 `
 
