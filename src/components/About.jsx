@@ -4,7 +4,6 @@ const AboutWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
 
     @media (max-width: 768px) {
         justify-content: center;
@@ -15,6 +14,7 @@ const AboutWrapper = styled.div`
 
 const AboutElement = styled.div`
     width: 50%;
+    text-align: justify;
     p {
         padding: 1rem;
     }
