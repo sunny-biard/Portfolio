@@ -37,6 +37,12 @@ const Project = styled.div`
         height: 200px;
         object-fit: scale-down;
     }
+
+    @media (max-width: 768px) {
+        img {
+            width: 100%;
+        }
+    }
 `
 
 function Projects() {
