@@ -24,8 +24,11 @@ const Project = styled.div`
     width: calc(100% * (1/4));
     border-radius: 25px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(rgba(41, 38, 38) 0%, rgb(255, 226, 171) 120%);
     color: #f1ce8c;
+    a {
+        color: #f1ce8c;
+    }
     img {
         width: 200px;
         height: 200px;
