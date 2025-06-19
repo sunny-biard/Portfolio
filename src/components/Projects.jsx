@@ -12,7 +12,6 @@ const ProjectsWrapper = styled.div`
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    background-color: #F6F6F6;
     gap: 20px;
 
     @media (max-width: 768px) {
