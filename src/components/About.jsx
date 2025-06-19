@@ -28,7 +28,7 @@ const FormationDiv = styled.div`
     width: 50%;
     padding: 1rem;
     li {
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     p {
         text-align: center;
