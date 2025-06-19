@@ -21,7 +21,7 @@ const ProjectsWrapper = styled.div`
 
 const Project = styled.div`
     a {
-        color: #000000;
+        color: #292626;
     }
     img {
         width: 200px;

@@ -7,18 +7,23 @@
   background-color: #f1ce8c;
 }
 
+.flex {
+    display: flex;
+}
+
 section {
     display: flex;
     flex-direction: column;
     padding: 2rem;
 }
 
-.flex {
-    display: flex;
+section #home {
+
+    padding: 25rem;
 }
 
 /* display background dark color on navbar scroll */
-.navbarScroll.navbarDark {
+.navbarScroll .navbarDark {
     background-color: #292626;
     color: #f1ce8c;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.16);
@@ -27,6 +32,10 @@ section {
 
 .navbar-dark .navbar-nav .nav-link {
     color: #292626;
+}
+
+.navbar-dark .navbar-nav .nav-link .navbarDark {
+    color: #f1ce8c;
 }
 
 .hero_title {
