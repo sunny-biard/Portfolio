@@ -13,6 +13,11 @@ section {
     padding: 2rem;
 }
 
+.container {
+    max-width: 1370px;
+    padding: 2rem;
+}
+
 h1, h2, h3 {
     font-family: DejaVu Sans Mono, monospace;
     font-style: italic;
@@ -28,9 +33,9 @@ p, a {
     font-style: italic;
 }
 
-.container {
-    max-width: 1370px;
-    padding: 2rem;
+.vertical {
+  width: 1px;
+  height: 100%;
 }
 
 /* Navbar */
