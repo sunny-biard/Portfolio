@@ -14,8 +14,8 @@ const AboutWrapper = styled.div`
 
 const AboutElement = styled.div`
     width: 50%;
+    padding: 1rem;
     p {
-        padding: 1rem;
         text-align: justify;
     }
 
