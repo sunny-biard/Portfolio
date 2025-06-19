@@ -7,11 +7,11 @@
   color: #f1ce8c;
 }
 
-/*section {
+section {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-}*/
+    padding: 2rem;
+}
 
 .flex {
     display: flex;
@@ -74,65 +74,3 @@
 .containerAbout div {
     width: 100%;
 }
-/*
-
-.imageAboutPage {
-    width: 100%;
-}
-.imageAboutPage {
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-/* skills */
-/*
-.skillsText.card {
-    height: 350px;
-    cursor: pointer;
-}
-.skillsText img {
-    width: 100%;
-    height: 150px;
-    object-fit: contain;
-}
-#skills p {
-    text-align: center;
-}
-.skillsIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-}
-.card-title {
-    text-align: center;
-}
-.card:hover .skillsIcon {
-    color: #008000;
-}
-.skillsText:hover {
-    border: 1px solid #008000;
-}
-*/
-/* portfolio */
-/*
-#portfolio p {
-    text-align: center;
-}
-*/
-/* contact */
-/*
-.contactContent {
-    display: flex;
-    justify-content: space-around;
-}
-
-.contactColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contactColumn i {
-    color: #198754;
-}
-    */
-/* footer */
