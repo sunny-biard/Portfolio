@@ -12,11 +12,26 @@ const AboutWrapper = styled.div`
     }
 `
 
-const AboutElement = styled.div`
+const AboutDiv = styled.div`
     width: 50%;
     padding: 1rem;
     p {
         text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%
+    }
+`
+
+const FormationDiv = styled.div`
+    width: 50%;
+    padding: 1rem;
+    li {
+        padding: 2rem 0;
+    }
+    p {
+        text-align: center;
     }
 
     @media (max-width: 768px) {
@@ -33,15 +48,15 @@ function About() {
     return (
         <section id="about" className="container">
             <AboutWrapper>
-                <AboutElement>
+                <AboutDiv>
                     <h2>A propos</h2>
                     <div>
                         <p> Actuellement en reconversion professionnelle, je termine actuellement ma formation de BTS Testeur Logiciel en alternance, dispensée par OpenClassrooms.</p>
                         <p>Cette formation m'a permis d'acquérir de solides compétences, aussi bien en test qu'en développement mais aussi en gestion de projet, compétences que j'ai pu mettre en pratique au sein de mon entreprise.</p>
                         <p>Par ailleurs, cette dernière m'a permis de me spécialiser dans un aspect du métier qui me passionne : l'automatisation des tests. En effet, dans le cadre d'un projet conséquent, on m'a confié pour mission de développer, déployer et maintenir l'ensemble des tests automatisés d'un projet sous Selenium (Java), projet s'étalant sur 2 ans (toujours en cours).</p>
                     </div>
-                </AboutElement>
-                <AboutElement>
+                </AboutDiv>
+                <FormationDiv>
                     <h2>Formation</h2>
                     <ListWrapper>
                         <li>
@@ -57,7 +72,7 @@ function About() {
                             <p className="italic">(2017 - 2020)</p>
                         </li>
                     </ListWrapper>
-                </AboutElement>
+                </FormationDiv>
             </AboutWrapper>
         </section>
     )
