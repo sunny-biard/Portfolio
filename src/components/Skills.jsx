@@ -11,7 +11,7 @@ const SectionWrapper = styled.section`
 const SkillsWrapper = styled.div`
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 50px;
     border-radius: 25px;
     background-color: #F6F6F6;
@@ -23,7 +23,7 @@ const SkillsWrapper = styled.div`
 `
 
 const SkillCard = styled.div`
-    width: 200px;
+    width: calc(100% * (1/4));
     height: 200px;
     border-radius: 25px;
     img {

@@ -57,11 +57,16 @@
 /* about */
 .container {
     max-width: 1370px;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .containerAbout {
-    flex-direction: row;
+    flex-direction: row wrap;
+    align-items: center;
+}
+
+.containerAbout h2 {
+    padding: 2rem;
 }
 
 .containerAbout div {
