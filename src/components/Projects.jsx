@@ -17,7 +17,7 @@ const ProjectsWrapper = styled.div`
 
     @media (max-width: 768px) {
         justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 `
 
