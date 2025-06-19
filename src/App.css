@@ -24,10 +24,10 @@ section {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.16);
     transition: 0.5s;
 }
-
+/*
 .navbar-dark .navbar-nav .nav-link {
     color: #292626;
-}
+}*/
 
 .hero_title {
     font-size: 4.5rem;

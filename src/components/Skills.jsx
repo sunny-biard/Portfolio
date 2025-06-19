@@ -64,7 +64,7 @@ function Skills() {
     }, []);
 
     return (
-        <SectionWrapper id="skills">
+        <SectionWrapper id="skills" className="container">
             <h2>Mes compétences</h2>
             <SkillsWrapper>
                 {skills.map(item => (

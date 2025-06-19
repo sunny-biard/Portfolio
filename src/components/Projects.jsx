@@ -52,7 +52,7 @@ function Projects() {
     }, []);
 
     return (
-        <SectionWrapper id="projects">
+        <SectionWrapper id="projects" className="container">
             <h2>Mes projets</h2>
             <ProjectsWrapper>
                 {properties.map(item => (
