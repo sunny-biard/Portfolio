@@ -2,12 +2,6 @@ import styled from "styled-components"
 import React, { useState, useEffect} from "react";
 import { prefix } from "../config";
 
-const SectionWrapper = styled.section`
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-`
-
 const SkillsWrapper = styled.div`
     padding-top: 2rem;
     display: flex;
@@ -65,7 +59,7 @@ function Skills() {
     }, []);
 
     return (
-        <SectionWrapper id="skills" className="container">
+        <section id="skills" className="container">
             <h2>Mes compétences</h2>
             <SkillsWrapper>
                 {skills.map(item => (
@@ -74,7 +68,7 @@ function Skills() {
                     </SkillCard>
                 ))}
             </SkillsWrapper>
-        </SectionWrapper>
+        </section>
     )
 }
 

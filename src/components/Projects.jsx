@@ -2,12 +2,6 @@ import styled from "styled-components"
 import React, { useState, useEffect} from "react";
 import { prefix } from "../config";
 
-const SectionWrapper = styled.section`
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-`
-
 const ProjectsWrapper = styled.div`
     padding-top: 2rem;
     display: flex;
@@ -66,7 +60,7 @@ function Projects() {
     }, []);
 
     return (
-        <SectionWrapper id="projects" className="container">
+        <section id="projects" className="container">
             <h2>Mes projets</h2>
             <ProjectsWrapper>
                 {properties.map(item => (
@@ -77,7 +71,7 @@ function Projects() {
                     </Project>
                 ))}
             </ProjectsWrapper>
-        </SectionWrapper>
+        </section>
     )
 }
 

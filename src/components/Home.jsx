@@ -11,13 +11,13 @@ const SectionWrapper = styled.section`
 `
 
 const TitleWrapper = styled.div`
-h1 {
-    font-size: 5rem;
-    padding-bottom: 5rem;
-}
-h2 {
-    font-size: 2.5rem;
-}
+    h1 {
+        font-size: 5rem;
+        padding-bottom: 5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
 `
 
 function Home() {

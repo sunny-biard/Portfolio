@@ -10,7 +10,12 @@
 section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
 }
 
 .container {

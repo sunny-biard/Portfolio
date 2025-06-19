@@ -1,16 +1,14 @@
+import styled from "styled-components"
+
+const ContactWrapper = styled.div``
+
 function Contact() {
 
     return (
         <section id="contact" className="container">
-            <div>
+            <ContactWrapper>
                 <h2>Contactez-moi</h2>
-                <div>
-                    <div>
-                        <h3>LinkedIn</h3>
-                        <p>Sunny BIARD</p>
-                    </div>
-                </div>
-            </div>
+            </ContactWrapper>
         </section>
     )
 }
