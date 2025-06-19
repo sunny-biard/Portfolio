@@ -14,9 +14,9 @@ const AboutWrapper = styled.div`
 
 const AboutElement = styled.div`
     width: 50%;
-    text-align: justify;
     p {
         padding: 1rem;
+        text-align: justify;
     }
 
     @media (max-width: 768px) {
