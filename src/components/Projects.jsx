@@ -11,8 +11,10 @@ const SectionWrapper = styled.section`
 const ProjectsWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 20px;
+    border-radius: 25px;
+    background-color: #F6F6F6;
 
     @media (max-width: 768px) {
         justify-content: center;
@@ -21,6 +23,7 @@ const ProjectsWrapper = styled.div`
 `
 
 const Project = styled.div`
+    width: calc(100% * (1/4));
     a {
         color: #292626;
     }

@@ -11,7 +11,7 @@ const SectionWrapper = styled.section`
 const SkillsWrapper = styled.div`
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 50px;
     border-radius: 25px;
     padding: 60px;
