@@ -49,12 +49,12 @@ section#home {
 }
 
 .section#home h1 {
-    font-size: 4.5rem;
-    padding: 2rem;
+    font-size: 10rem;
+    padding: 5rem;
 }
 
 .section#home h2 {
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 /* about */
