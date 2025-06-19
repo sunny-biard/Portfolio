@@ -28,6 +28,7 @@ const Project = styled.div`
     color: #f1ce8c;
     a {
         color: #f1ce8c;
+        cursor: pointer;
     }
     img {
         width: 200px;
@@ -65,8 +66,7 @@ function Projects() {
                     <Project key={item.title}>
                         <h3>{item.title}</h3>
                         <p>{item.text}</p>
-                        <a href={item.link}>Lien vers le projet</a>
-                        <img src={prefix + item.image} alt={item.text}></img>
+                        <a href={item.link}><img src={prefix + item.image} alt={item.text}></img></a>
                     </Project>
                 ))}
             </ProjectsWrapper>
