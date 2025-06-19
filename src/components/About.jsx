@@ -18,6 +18,9 @@ const AboutWrapper = styled.div`
 const AboutElement = styled.div`
     width: 50%;
     padding: 1rem;
+    ul {
+        list-style-type: none;
+    }
     li {
         padding: 1rem 0;
     }
