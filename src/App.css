@@ -19,14 +19,14 @@ section {
 
 /* display background dark color on navbar scroll */
 .navbarScroll.navbarDark {
-    background-color: #000;
-    color: #fff;
+    background-color: #292626;
+    color: #f1ce8c;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.16);
     transition: 0.5s;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: #f1ce8c;
 }
 
 /* hero background image */
@@ -53,7 +53,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #f1ce8c;
 }
 
 /* about */
