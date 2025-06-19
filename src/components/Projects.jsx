@@ -34,16 +34,13 @@ const Project = styled.div`
         cursor: pointer;
     }
     img {
-        width: 200px;
+        width: 80%;
         height: 200px;
         object-fit: scale-down;
     }
 
     @media (max-width: 768px) {
         width: 100%;
-        img {
-            width: 100%;
-        }
     }
 `
 
