@@ -18,6 +18,7 @@ const ProjectsWrapper = styled.div`
     @media (max-width: 768px) {
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
 `
 
@@ -39,6 +40,7 @@ const Project = styled.div`
     }
 
     @media (max-width: 768px) {
+        width: 100%;
         img {
             width: 100%;
         }
