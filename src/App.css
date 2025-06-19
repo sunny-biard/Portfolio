@@ -61,7 +61,7 @@ section {
 }
 
 .containerAbout {
-    flex-direction: column;
+    flex-direction: row;
 }
 
 
