@@ -7,13 +7,14 @@
   background-color: #f1ce8c;
 }
 
-.flex {
-    display: flex;
-}
-
 section {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1370px;
     padding: 2rem;
 }
 
@@ -39,39 +40,4 @@ section {
 
 .navbar-dark .navbar-brand.navbarDark {
     color: #f1ce8c;
-}
-
-/* Banner */
-section#home {
-    padding: 25rem 2rem;
-    text-align: center;
-    justify-content: center;
-}
-
-section#home h1 {
-    font-size: 5rem;
-    padding-bottom: 5rem;
-}
-
-section#home h2 {
-    font-size: 2.5rem;
-}
-
-/* about */
-.container {
-    max-width: 1370px;
-    padding: 2rem;
-}
-
-.containerAbout {
-    flex-direction: column;
-    align-items: center;
-}
-
-.containerAbout h2 {
-    padding-top: 2rem;
-}
-
-.containerAbout div {
-    width: 100%;
 }

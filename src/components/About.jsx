@@ -1,9 +1,22 @@
+import styled from "styled-components"
+
+const SectionWrapper = styled.section``
+
+const AboutWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    h2 {
+        padding-top: 2rem;
+    }
+`
 
 function About() {
 
     return (
-        <section id="about" className="container">
-            <div className="containerAbout flex">
+        <SectionWrapper id="about" className="container">
+            <AboutWrapper>
                 <div>
                     <h2>A propos</h2>
                     <div>
@@ -21,8 +34,8 @@ function About() {
                         <p>Licence Informatique (2017 - 2020)</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </AboutWrapper>
+        </SectionWrapper>
     )
 }
 
