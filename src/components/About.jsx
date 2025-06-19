@@ -16,7 +16,7 @@ function About() {
                 <div>
                     <h2>Formation :</h2>
                     <div>
-                        <p>BTS Testeur Logiciel (2024 - Aujourd'hui)</p>
+                        <p>BTS Testeur Logiciel (2023 - Aujourd'hui)</p>
                         <p>Double Licence Économie-Gestion (2020 - 2023)</p>
                         <p>Licence Informatique (2017 - 2020)</p>
                     </div>
