@@ -35,6 +35,7 @@ p, a {
 
 .verticalLine {
   background: linear-gradient(#000, #000) no-repeat center/2px 100%;
+  width: 200px;
 }
 
 /* Navbar */

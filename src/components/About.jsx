@@ -9,12 +9,15 @@ const AboutWrapper = styled.div`
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        .verticalLine {
+            display: none;
+        }
     }
 `
 
 const AboutElement = styled.div`
     width: 50%;
-    padding: 2rem;
+    padding: 1rem;
     li {
         padding: 1rem 0;
     }
