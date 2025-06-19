@@ -24,7 +24,7 @@ const Project = styled.div`
     width: calc(100% * (1/4));
     border-radius: 25px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
-    background: linear-gradient(rgba(41, 38, 38) 0%, rgb(255, 226, 171) 120%);
+    background: linear-gradient(rgba(41, 38, 38) 40%, rgb(255, 226, 171) 120%);
     color: #f1ce8c;
     a {
         color: #f1ce8c;
@@ -63,10 +63,10 @@ function Projects() {
             <ProjectsWrapper>
                 {properties.map(item => (
                     <Project key={item.title}>
-                        <img src={prefix + item.image} alt={item.text}></img>
                         <h3>{item.title}</h3>
                         <p>{item.text}</p>
                         <a href={item.link}>Lien vers le projet</a>
+                        <img src={prefix + item.image} alt={item.text}></img>
                     </Project>
                 ))}
             </ProjectsWrapper>
