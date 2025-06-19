@@ -1,4 +1,4 @@
-function Banner() {
+function Home() {
 
     return (    
         <section id="home" className="container">
@@ -10,4 +10,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Home

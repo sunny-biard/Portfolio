@@ -17,11 +17,7 @@ section {
     padding: 2rem;
 }
 
-section#home {
-    padding: 25rem;
-}
-
-/* display background dark color on navbar scroll */
+/* Navbar */
 .navbarScroll.navbarDark {
     background-color: #292626;
     color: #f1ce8c;
@@ -29,12 +25,25 @@ section#home {
     transition: 0.5s;
 }
 
-.navbar-dark .navbar-brand .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: #292626;
 }
 
-.navbar-dark .navbar-brand.navbarDark .navbar-nav .nav-link.navbarDark {
+.navbar-dark .navbar-nav .nav-link.navbarDark {
     color: #f1ce8c;
+}
+
+.navbar-dark .navbar-brand {
+    color: #292626;
+}
+
+.navbar-dark .navbar-brand.navbarDark {
+    color: #f1ce8c;
+}
+
+/* Banner */
+section#home {
+    padding: 25rem;
 }
 
 .hero_title {
