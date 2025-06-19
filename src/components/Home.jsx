@@ -4,6 +4,10 @@ const SectionWrapper = styled.section`
     padding: 25rem 2rem;
     text-align: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        padding 15rem 2rem;
+    }
 `
 
 const TitleWrapper = styled.div`
