@@ -26,19 +26,19 @@ function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#home">Accueil</a>
+                                <a className={`nav-link ${scroll}`} href="#home">Accueil</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#about">A propos</a>
+                                <a className={`nav-link ${scroll}`} href="#about">A propos</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#skills">Compétences</a>
+                                <a className={`nav-link ${scroll}`} href="#skills">Compétences</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#projects">Projets</a>
+                                <a className={`nav-link ${scroll}`} href="#projects">Projets</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#contact">Contact</a>
+                                <a className={`nav-link ${scroll}`} href="#contact">Contact</a>
                             </li>
                         </ul>
 
