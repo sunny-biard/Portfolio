@@ -43,18 +43,18 @@ section {
 
 /* Banner */
 section#home {
-    padding: 25rem 2rem 25rem 2rem;
+    padding: 30rem 2rem;
     text-align: center;
     justify-content: center;
 }
 
 section#home h1 {
-    font-size: 10rem;
+    font-size: 5rem;
     padding-bottom: 5rem;
 }
 
 section#home h2 {
-    font-size: 5rem;
+    font-size: 2.5rem;
 }
 
 /* about */
@@ -64,7 +64,7 @@ section#home h2 {
 }
 
 .containerAbout {
-    flex-flow: row wrap;
+    flex-direction: column;
     align-items: center;
 }
 

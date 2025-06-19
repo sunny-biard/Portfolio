@@ -10,8 +10,8 @@ const SectionWrapper = styled.section`
 
 const ProjectsWrapper = styled.div`
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     gap: 20px;
 
     @media (max-width: 768px) {
