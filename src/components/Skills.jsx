@@ -9,6 +9,7 @@ const SectionWrapper = styled.section`
 `
 
 const SkillsWrapper = styled.div`
+    padding-top: 2rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;

@@ -9,6 +9,7 @@ const SectionWrapper = styled.section`
 `
 
 const ProjectsWrapper = styled.div`
+    padding-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
