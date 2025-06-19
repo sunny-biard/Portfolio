@@ -6,7 +6,7 @@ const SectionWrapper = styled.section`
     justify-content: center;
 
     @media (max-width: 768px) {
-        padding 15rem 2rem;
+        padding: 15rem 2rem;
     }
 `
 
