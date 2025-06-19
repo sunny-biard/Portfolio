@@ -14,7 +14,7 @@ const AboutWrapper = styled.div`
 
 const AboutElement = styled.div`
     width: 50%;
-    padding: 1rem;
+    padding: 2rem;
     li {
         padding: 1rem 0;
     }
@@ -44,7 +44,7 @@ function About() {
                         <p>Par ailleurs, cette dernière m'a permis de me spécialiser dans un aspect du métier qui me passionne : l'automatisation des tests. En effet, dans le cadre d'un projet conséquent, on m'a confié pour mission de développer, déployer et maintenir l'ensemble des tests automatisés d'un projet sous Selenium (Java), projet s'étalant sur 2 ans (toujours en cours).</p>
                     </div>
                 </AboutElement>
-                <hr className="vertical"/>
+                <div className="verticalLine"/>
                 <AboutElement>
                     <ListWrapper>
                         <li>
