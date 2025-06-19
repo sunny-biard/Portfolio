@@ -21,6 +21,7 @@ const ProjectsWrapper = styled.div`
 `
 
 const Project = styled.div`
+    padding: 1rem;
     width: calc(100% * (1/4));
     border-radius: 25px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
