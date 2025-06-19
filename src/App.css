@@ -62,11 +62,10 @@
 
 .containerAbout {
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .containerAbout div {
-    width: 50%;
+    width: 100%;
 }
 
 
