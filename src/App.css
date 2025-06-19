@@ -13,7 +13,7 @@ section {
     padding: 2rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: DejaVu Sans Mono, monospace;
     font-style: italic;
     font-size: 2rem;

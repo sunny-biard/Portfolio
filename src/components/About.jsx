@@ -35,9 +35,9 @@ function About() {
 
     return (
         <section id="about" className="container">
+            <h2>A propos</h2>
             <AboutWrapper>
                 <AboutElement>
-                    <h2>A propos</h2>
                     <div>
                         <p> Actuellement en reconversion professionnelle, je termine actuellement ma formation de BTS Testeur Logiciel en alternance, dispensée par OpenClassrooms.</p>
                         <p>Cette formation m'a permis d'acquérir de solides compétences, aussi bien en test qu'en développement mais aussi en gestion de projet, compétences que j'ai pu mettre en pratique au sein de mon entreprise.</p>
@@ -45,7 +45,7 @@ function About() {
                     </div>
                 </AboutElement>
                 <AboutElement>
-                    <h2>Formation</h2>
+                    <h3>Formation</h3>
                     <ListWrapper>
                         <li>
                             <p>BTS Testeur Logiciel</p>
