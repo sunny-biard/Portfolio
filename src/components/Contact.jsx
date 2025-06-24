@@ -21,7 +21,7 @@ const ContactCard = styled.div`
     img {
         width: 100%;
         height: 100%;
-        filter: drop-shadow(1px 1px 3px #292626);
+        filter: drop-shadow(1px 1px 1px #292626);
     }
 
     &:hover {

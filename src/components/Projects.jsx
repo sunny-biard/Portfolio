@@ -13,6 +13,7 @@ const ProjectsWrapper = styled.div`
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 50px;
     }
 `
 
@@ -29,14 +30,14 @@ const ProjectCard = styled.div`
     cursor: pointer;
     a {
         color: #f1ce8c;
-        text-decoration: none
+        text-decoration: none;
         padding: 1rem;
     }
     img {
         width: 80%;
         height: 200px;
         object-fit: scale-down;
-        filter: drop-shadow(1px 1px 3px #292626);
+        filter: drop-shadow(1px 1px 1px #292626);
     }
 
     &:hover {
@@ -45,7 +46,7 @@ const ProjectCard = styled.div`
     }
 
     @media (max-width: 768px) {
-        width: 100%;
+        width: 80%;
     }
 `
 
