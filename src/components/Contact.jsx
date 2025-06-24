@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { prefix } from "../config";
 
 const ContactWrapper = styled.div`
     padding-top: 2rem;
@@ -32,13 +33,13 @@ function Contact() {
 
     return (
         <section id="contact" className="container">
+            <h2>Contactez-moi</h2>
             <ContactWrapper>
-                <h2>Contactez-moi</h2>
                 <ContactCard>
-                    <a href="https://www.linkedin.com/in/sunnybiard/"><img src="/data/images/linkedin.webp" alt="LinkedIn"/></a>
+                    <a href="https://www.linkedin.com/in/sunnybiard/"><img src={`${prefix}/data/images/linkedin.webp`} alt="LinkedIn"/></a>
                 </ContactCard>
                 <ContactCard>
-                    <a href="https://github.com/sunny-biard"><img src="/data/images/github.webp" alt="Github"/></a>
+                    <a href="https://github.com/sunny-biard"><img src={`${prefix}/data/images/github.webp`} alt="Github"/></a>
                 </ContactCard>
             </ContactWrapper>
         </section>
