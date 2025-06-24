@@ -9,7 +9,7 @@ const SectionWrapper = styled.section`
     }
 
     @media (max-width: 768px) {
-        padding: 15rem 2rem;
+        padding: 20rem 2rem;
     }
 `
 
