@@ -71,9 +71,11 @@ function Projects() {
             <ProjectsWrapper>
                 {properties.map(item => (
                     <Project key={item.title}>
-                        <h3>{item.title}</h3>
-                        <p>{item.text}</p>
-                        <a href={item.link}><img src={prefix + item.image} alt={item.text}></img></a>
+                        <a href={item.link}>
+                            <h3>{item.title}</h3>
+                            <p>{item.text}</p>
+                            <img src={prefix + item.image} alt={item.text}></img>
+                        </a>
                     </Project>
                 ))}
             </ProjectsWrapper>

@@ -28,7 +28,7 @@ const SkillCard = styled.div`
 
     &:hover {
         transition: all 0.3s;
-        transform:scale(1.3,1.3) rotate(5deg);
+        transform:scale(1.2,1.2) rotate(10deg);
     }
 `
 
