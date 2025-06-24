@@ -27,6 +27,7 @@ const Project = styled.div`
     a {
         color: #f1ce8c;
         cursor: pointer;
+        text-decoration: none
     }
     img {
         width: 80%;
@@ -36,7 +37,7 @@ const Project = styled.div`
 
     &:hover {
         transition: all 0.3s;
-        transform:scale(1.1,1.1);
+        transform: scale(1.1,1.1);
     }
 
     @media (max-width: 768px) {

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const SectionWrapper = styled.section`
-    padding: 25rem 2rem;
+    padding: 30rem 2rem;
     text-align: center;
     justify-content: center;
     h1 {
