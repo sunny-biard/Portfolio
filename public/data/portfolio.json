@@ -14,7 +14,7 @@
     {
         "image": "/data/images/menumaker.webp",
         "title": "MenuMaker",
-        "text": "Planification du développement d'un site de mise en page de menus de restaurateurs (Gestion de projet, veille technologique, revue de spécifications fonctionnelles et techniques, Kanban)",
+        "text": "Planification du développement d'un site de mise en page de menus de restaurateurs",
         "link": "https://github.com/sunny-biard/MenuMaker"
     }
 ]

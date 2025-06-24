@@ -1,12 +1,12 @@
 import styled from "styled-components"
-import React, { useState, useEffect} from "react";
+import { useState, useEffect} from "react";
 import { prefix } from "../config";
 
 const ProjectsWrapper = styled.div`
     padding-top: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
 
     @media (max-width: 768px) {
@@ -16,17 +16,19 @@ const ProjectsWrapper = styled.div`
     }
 `
 
-const Project = styled.div`
-    padding: 1rem;
+const ProjectCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: calc(100% * (1/4));
     height: 550px;
     border-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5) 15px 20px 10px;
     background: linear-gradient(rgba(41, 38, 38) 40%, rgb(255, 226, 171) 120%);
     color: #f1ce8c;
+    cursor: pointer;
     a {
         color: #f1ce8c;
-        cursor: pointer;
         text-decoration: none
     }
     img {
@@ -71,13 +73,13 @@ function Projects() {
             <h2>Mes projets</h2>
             <ProjectsWrapper>
                 {properties.map(item => (
-                    <Project key={item.title}>
+                    <ProjectCard key={item.title}>
                         <a href={item.link}>
                             <h3>{item.title}</h3>
                             <p>{item.text}</p>
-                            <img src={prefix + item.image} alt={item.text}></img>
+                            <img src={prefix + item.image} alt={item.title}/>
                         </a>
-                    </Project>
+                    </ProjectCard>
                 ))}
             </ProjectsWrapper>
         </section>
