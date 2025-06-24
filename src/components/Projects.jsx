@@ -30,6 +30,7 @@ const ProjectCard = styled.div`
     a {
         color: #f1ce8c;
         text-decoration: none
+        padding: 1rem;
     }
     img {
         width: 80%;
