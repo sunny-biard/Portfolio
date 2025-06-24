@@ -26,7 +26,7 @@ const ContactCard = styled.div`
 
     &:hover {
         transition: all 0.3s;
-        transform: scale(1.3,1.3);
+        transform: scale(1.1,1.1);
     }
 `
 
