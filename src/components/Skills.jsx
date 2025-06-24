@@ -25,6 +25,10 @@ const SkillCard = styled.div`
         height: 100%;
         object-fit: scale-down;
     }
+
+    &:hover {
+        transform:scale(1.3,1.3) rotate(5deg);
+    }
 `
 
 function Skills() {

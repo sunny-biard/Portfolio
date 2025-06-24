@@ -19,6 +19,7 @@ const ProjectsWrapper = styled.div`
 const Project = styled.div`
     padding: 1rem;
     width: calc(100% * (1/4));
+    height: 550px;
     border-radius: 25px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
     background: linear-gradient(rgba(41, 38, 38) 40%, rgb(255, 226, 171) 120%);
@@ -31,6 +32,10 @@ const Project = styled.div`
         width: 80%;
         height: 200px;
         object-fit: scale-down;
+    }
+
+    &:hover {
+        transform:scale(1.3,1.3);
     }
 
     @media (max-width: 768px) {
