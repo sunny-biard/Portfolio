@@ -15,8 +15,9 @@ const SkillsWrapper = styled.div`
 `
 
 const SkillCard = styled.div`
-    width: calc(100% * (1/4));
-    height: 200px;
+    flex: 0 0 30%;
+    width: calc(20%);
+    height: 150px;
     img {
         width: 100%;
         height: 100%;
