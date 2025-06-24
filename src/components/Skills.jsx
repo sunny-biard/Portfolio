@@ -22,6 +22,7 @@ const SkillCard = styled.div`
         width: 100%;
         height: 100%;
         object-fit: scale-down;
+        filter: drop-shadow(1px 1px 3px #292626);
     }
 
     &:hover {

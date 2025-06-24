@@ -36,6 +36,7 @@ const ProjectCard = styled.div`
         width: 80%;
         height: 200px;
         object-fit: scale-down;
+        filter: drop-shadow(1px 1px 3px #292626);
     }
 
     &:hover {
