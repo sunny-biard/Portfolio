@@ -35,7 +35,8 @@ const Project = styled.div`
     }
 
     &:hover {
-        transform:scale(1.3,1.3);
+        transition: all 0.3s;
+        transform:scale(1.1,1.1);
     }
 
     @media (max-width: 768px) {
