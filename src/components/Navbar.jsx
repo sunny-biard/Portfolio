@@ -27,23 +27,23 @@ function Navbar() {
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item active">
                                 <a className={`nav-link ${scroll}`} href="#home" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent">Accueil</a>
+                                    data-bs-target="#navbarSupportedContent #home">Accueil</a>
                             </li>
                             <li className="nav-item">
                                 <a className={`nav-link ${scroll}`} href="#about" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent">A propos</a>
+                                    data-bs-target="#navbarSupportedContent #about">A propos</a>
                             </li>
                             <li className="nav-item">
                                 <a className={`nav-link ${scroll}`} href="#skills" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent">Compétences</a>
+                                    data-bs-target="#navbarSupportedContent #skills">Compétences</a>
                             </li>
                             <li className="nav-item">
                                 <a className={`nav-link ${scroll}`} href="#projects" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent">Projets</a>
+                                    data-bs-target="#navbarSupportedContent #projects">Projets</a>
                             </li>
                             <li className="nav-item">
                                 <a className={`nav-link ${scroll}`} href="#contact" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent">Contact</a>
+                                    data-bs-target="#navbarSupportedContent #contact">Contact</a>
                             </li>
                         </ul>
 
