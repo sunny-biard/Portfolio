@@ -27,7 +27,7 @@ function Navbar() {
                     <a className={`navbar-brand ${scroll}`} href="#">Sunny BIARD</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle={open ? "collapse" : ""}
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        aria-label="Toggle navigation" onClick={handleClick}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
