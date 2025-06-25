@@ -3,7 +3,6 @@ import { prefix } from "../config";
 
 const ContactWrapper = styled.div`
     padding-top: 2rem;
-    display: flex;
     flex-flow: row;
     justify-content: space-evenly;
     gap: 50px;
@@ -33,9 +32,9 @@ const ContactCard = styled.div`
 function Contact() {
 
     return (
-        <section id="contact" className="container">
+        <section id="contact" className="container flex">
             <h2>Contactez-moi</h2>
-            <ContactWrapper>
+            <ContactWrapper className="flex">
                 <ContactCard>
                     <a href="https://www.linkedin.com/in/sunnybiard/"><img src={`${prefix}/data/images/linkedin.webp`} alt="LinkedIn"/></a>
                 </ContactCard>

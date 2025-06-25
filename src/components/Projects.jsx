@@ -4,7 +4,6 @@ import { prefix } from "../config";
 
 const ProjectsWrapper = styled.div`
     padding-top: 2rem;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
@@ -18,7 +17,6 @@ const ProjectsWrapper = styled.div`
 `
 
 const ProjectCard = styled.div`
-    display: flex;
     flex-direction: column;
     justify-content: center;
     width: calc(100% * (1/4));
@@ -72,11 +70,11 @@ function Projects() {
     }, []);
 
     return (
-        <section id="projects" className="container">
+        <section id="projects" className="container flex">
             <h2>Mes projets</h2>
-            <ProjectsWrapper>
+            <ProjectsWrapper className="flex">
                 {properties.map(item => (
-                    <ProjectCard key={item.title}>
+                    <ProjectCard className="flex" key={item.title}>
                         <a href={item.link}>
                             <h3>{item.title}</h3>
                             <p>{item.text}</p>

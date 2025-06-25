@@ -16,7 +16,7 @@ const SectionWrapper = styled.section`
 function Home() {
 
     return (    
-        <SectionWrapper id="home" className="container">
+        <SectionWrapper id="home" className="container flex">
             <h1>Sunny BIARD</h1>
         </SectionWrapper>
     )

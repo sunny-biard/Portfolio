@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const AboutWrapper = styled.div`
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 
@@ -42,7 +41,7 @@ function About() {
     return (
         <section id="about" className="container">
             <h2>A propos</h2>
-            <AboutWrapper>
+            <AboutWrapper className="flex">
                 <AboutElement>
                     <div>
                         <p> Actuellement en reconversion professionnelle, je termine actuellement ma formation de BTS Testeur Logiciel en alternance, dispensée par OpenClassrooms.</p>

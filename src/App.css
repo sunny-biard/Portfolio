@@ -7,7 +7,6 @@
 }
 
 section {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
@@ -15,7 +14,10 @@ section {
 
 .container {
     max-width: 1370px;
-    padding: 2rem;
+}
+
+.flex {
+    display: flex;
 }
 
 h1, h2, h3 {

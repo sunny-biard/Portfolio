@@ -4,7 +4,6 @@ import { prefix } from "../config";
 
 const SkillsWrapper = styled.div`
     padding-top: 2rem;
-    display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     gap: 50px;
@@ -63,9 +62,9 @@ function Skills() {
     }, []);
 
     return (
-        <section id="skills" className="container">
+        <section id="skills" className="container flex">
             <h2>Mes compétences</h2>
-            <SkillsWrapper>
+            <SkillsWrapper className="flex">
                 {skills.map(item => (
                     <SkillCard key={item.title}>
                         <img src={prefix + item.image} alt={item.title}></img>
