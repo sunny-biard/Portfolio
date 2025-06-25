@@ -32,25 +32,25 @@ function Navbar() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto">
-                            <li className="nav-item active">
-                                <a className={`nav-link ${scroll}`} href="#home" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" onClick={handleClick}>Accueil</a>
+                            <li className="nav-item active" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" onClick={handleClick}>
+                                <a className={`nav-link ${scroll}`} href="#home">Accueil</a>
                             </li>
-                            <li className="nav-item">
-                                <a className={`nav-link ${scroll}`} href="#about" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" onClick={handleClick}>A propos</a>
+                            <li className="nav-item" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" onClick={handleClick}>
+                                <a className={`nav-link ${scroll}`} href="#about">A propos</a>
                             </li>
-                            <li className="nav-item">
-                                <a className={`nav-link ${scroll}`} href="#skills" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" onClick={handleClick}>Compétences</a>
+                            <li className="nav-item" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" onClick={handleClick}>
+                                <a className={`nav-link ${scroll}`} href="#skills">Compétences</a>
                             </li>
-                            <li className="nav-item">
-                                <a className={`nav-link ${scroll}`} href="#projects" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" onClick={handleClick}>Projets</a>
+                            <li className="nav-item" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" onClick={handleClick}>
+                                <a className={`nav-link ${scroll}`} href="#projects">Projets</a>
                             </li>
-                            <li className="nav-item">
-                                <a className={`nav-link ${scroll}`} href="#contact" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" onClick={handleClick}>Contact</a>
+                            <li className="nav-item" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" onClick={handleClick}>
+                                <a className={`nav-link ${scroll}`} href="#contact">Contact</a>
                             </li>
                         </ul>
 
