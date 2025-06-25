@@ -18,7 +18,7 @@ function Navbar() {
 
     const handleClick = () => {
 
-        collapse == 'collapse' ? setCollapse('collapse.show') : setCollapse('collapse');
+        collapse == 'collapse' ? setCollapse('collapse.show collapsing') : setCollapse('collapse collapsing');
     }
 
     return (
