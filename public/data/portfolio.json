@@ -1,7 +1,7 @@
 [
     {
         "image": "/data/images/ecoblissbath.webp",
-        "title": "EcoBlissBath",
+        "title": "Eco Bliss Bath",
         "text": "Automatisation des tests sous Cypress pour une application de vente de produits de beauté en ligne (E2E, API, Smoke tests)",
         "link": "https://github.com/sunny-biard/EcoBlissBath"
     },
@@ -13,7 +13,7 @@
     },
     {
         "image": "/data/images/menumaker.webp",
-        "title": "MenuMaker",
+        "title": "Menu Maker",
         "text": "Planification du développement d'un site de mise en page de menus de restaurateurs",
         "link": "https://github.com/sunny-biard/MenuMaker"
     }
